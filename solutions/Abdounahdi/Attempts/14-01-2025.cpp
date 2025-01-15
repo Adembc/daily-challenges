@@ -7,7 +7,7 @@ public:
 
 
     string formatTime(vector<int> mins , vector<int> hours){
-        if ((mins.size()==0)&&(hours.size() == 0 )) return "" ;
+        if ((mins.size()==0)&&(hours.size() == 0 )) return "0:00" ;
         
         string minutes ; 
         string hour ; 
@@ -48,7 +48,10 @@ public:
     void solve(int turnedOn , vector<int> mins , vector<int>hours , vector<int> minsChosen , vector<int> hoursChosen , vector<string> &solution ){
         if (turnedOn == 0 ){
             string sol = formatTime(minsChosen , hoursChosen);
-            solution.push_back(sol); 
+            int cnt = count(solution.begin(), solution.end(), sol);
+            if (cnt == 0){
+                solution.push_back(sol); 
+            }
             return ; 
         }
 
@@ -75,7 +78,7 @@ public:
     
 
     vector<string> readBinaryWatch(int turnedOn) {
-
+        if (turnedOn>8)return{} ; 
         vector<int> hours = {1 , 2 , 4 , 8}; 
         vector<int> mins = {1 , 2 , 4 , 8 , 16 , 32 }; 
         vector<string> solution ; 
