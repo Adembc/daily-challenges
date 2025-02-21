@@ -15,6 +15,9 @@
 - **27-01-2025**: [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/description/) - Leetcode
 - **12-02-2025**: [Clone Graph](https://leetcode.com/problems/clone-graph/description/) - Leetcode
 - **17-02-2025**: [Party](https://codeforces.com/contest/115/problem/A) - Codeforces
+- **18-02-2025**: [News Distribution](https://codeforces.com/problemset/problem/1167/C) - Codeforces
+- **19-02-2025**: [Secret Passwords](https://codeforces.com/contest/1263/problem/D) - Codeforces
+- **20-02-2025**: [Learning Languages](https://codeforces.com/contest/277/problem/A) - Codeforces
   
 
   
